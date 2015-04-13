@@ -1,0 +1,4 @@
+# ApkORAppSecurityFromUnauthorizedAndUnknownResources
+This Example demonstrates a simple implementation of Apk installation only for authorized resources like Play Store and Amazon Store.
+Now, There are many apps available in the market that can share your apk file with other devices. Its not good for monetization of your app. By this simple example you can implement app level security that can uninstall application if they are installing from unauthorized resources. 
+In this Example, we are incuding two root resources. First one is Amazon store and second one is Play Store. First, You have to get your installer package name by using this simple code line ActivityName.this.getPackageManager().getInstallerPackageName(ActivityName.this.getPackageName()) and then you have to check return data from existing installerID(For Amazon - com.amazon.venezia and for Play store - com.android.vending). 
